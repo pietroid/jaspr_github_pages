@@ -1,8 +1,10 @@
-A documentation site built with Jaspr [pietroid/jaspr_github_template](https://pietroid.github.io/jaspr_github_pages/)
+# Jaspr with Github Pages
+
+This is a template to start working with Jaspr and Github Pages very fast! Live at [pietroid/jaspr_github_template](https://pietroid.github.io/jaspr_github_pages/).
 
 ## Setting up your own Jaspr site
 
-- Create a new repository on Github and enable Github Pages in the repository settings. You can choose to host the site from the `main` branch or any other branch (see the documentation [here](https://pietroid.github.io/jaspr_github_template)).
+- Create a new repository on Github and enable Github Pages in the repository settings. You can choose to host the site from the `main` branch or any other branch (see the documentation [here](https://docs.github.com/en/pages/quickstart#creating-your-website)).
 - Update `lib/github_pages_base.dart` to set the correct base path for your repository (e.g., `/your_repo_name`).
 - You can already push your changes to Github and after couple of minutes, see the site live at `https://username.github.io/your_repo_name/` 🚀.
 
