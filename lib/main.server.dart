@@ -30,9 +30,18 @@ void main() {
   // [ContentApp] spins up the content rendering pipeline from jaspr_content to render
   // your markdown files in the content/ directory to a beautiful documentation site.
   runApp(
-    Document.template(
-      attachTo: '#app',
-      child: ContentApp(
+    Document(
+      title: 'Jaspr with Github Pages',
+      base: kDebugMode ? '/' : '/jaspr_github_pages',
+      meta: {
+        'description': 'Jaspr with Github Pages template',
+        'keywords': 'jaspr, github, pages, documentation',
+        'og:title': 'Jaspr with Github Pages',
+        'og:description': 'Jaspr with Github Pages template',
+        'og:image': 'https://pietroid.github.io/jaspr_github_pages/images/logo.svg',
+      },
+      head: [link(rel: 'stylesheet', href: '/jaspr_github_pages/styles.css')],
+      body: ContentApp(
         // Enables mustache templating inside the markdown files.
         templateEngine: MustacheTemplateEngine(),
         parsers: [
