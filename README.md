@@ -1,5 +1,16 @@
-A documentation site built with Jaspr [pietroid/jaspr_github_template](https://pietroid.github.io/jaspr_github_template)
+A documentation site built with Jaspr [pietroid/jaspr_github_template](https://pietroid.github.io/jaspr_github_pages/)
 
 ## Setting up your own Jaspr site
 
 - Create a new repository on Github and enable Github Pages in the repository settings. You can choose to host the site from the `main` branch or any other branch (see the documentation [here](https://pietroid.github.io/jaspr_github_template)).
+- Update `lib/github_pages_base.dart` to set the correct base path for your repository (e.g., `/your_repo_name`).
+- You can already push your changes to Github and after couple of minutes, see the site live at `https://username.github.io/your_repo_name/` 🚀.
+
+## Customizing your Jaspr site
+
+For full understanding of how to customize your Jaspr site, please refer to the [Jaspr Content Documentation](https://docs.jaspr.site/content)
+
+- Update the `title` and `meta` tags in `lib/main.server.dart` to reflect your site's title and description.
+- Update favicons and other assets in the `images` folder to customize your site's appearance.
+- Update the font in `styles.css` to use your preferred font. You can find a list of available fonts [here](https://fonts.google.com/).
+- Update the `content` folder to add your own content. You can create new markdown files and organize them in subfolders as needed. The `index.md` file will be the homepage of your site.
